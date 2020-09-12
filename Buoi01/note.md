@@ -33,6 +33,7 @@ Nếu như là lần đầu tiên trong đời sử dụng git và cài git
 
 6. git push -u origin master (Trong lần đầu tiên chưa có nhánh master)
   Nếu có nhánh master rồi trong những lần code tiếp theo (git push)
+
 <!--  -->
 
 git add .
