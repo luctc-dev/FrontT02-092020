@@ -17,8 +17,43 @@
 
 
   position: fixed; -> fix cứng -> cố định -> so snahs sự khác nhau giữa absolute và fixed
-
   Toán trục toạ độ Ox Oy
+
+  So sánh Block Element và Inline Element ???
+
+  display: 
+    block
+      - Mặc định có width bằng 100% so với thằng cha (Có thể điều chỉnh lại width cho nhỏ hơn bằng width: xxpx)
+      - Luôn luôn đứng 1 minh trên 1 hàng (Bất kể độ rộng là bao nhiêu)
+      -> Không thể ứng dụng block để chia cột
+
+    inline
+      - Mặc định width bằng nội dung của nó (Nội dung bao nhiêu width bấy nhiêu
+      - Có thể đứng chung hàng với những thằng inline khác
+      - Không thể điều chỉnh width, height, ...
+      -> Không thể ứng dụng inline để chia cột (Vì không sét width được)
+
+    inline-block
+       - Mặc định width bằng nội dung của nó (Nội dung bao nhiêu width bấy nhiêu) -> Giống inline
+       - Có thể đứng chung hàng với những thằng inline, inline-block khác -> Giống inline
+       - CÓ thể điều chỉnh width, height, ... -> Khác inline mà giống block
+       -> Có thể ứng dụng inline-block để chia cột (Sét được width, đứng chung hàng được)
+          -> Chia layout có 2 columns, mỗi column 50%
+
+
+    inline, inline-block mình coi nó như là một chữ cái
+    -> Triệt tiêu được một chữ cái -> font-size: 0
+
+    -> Nó là vị trí bất thường hay bình thường??
+    -> Nếu bất thường -> dùng position absolute và các kĩ thuật top, left, right, bottom, transform, .. để điều chỉnh vị trí
+
+    -> Nếu bình thường 
+      -> Nó là display block hay là inline-block????? 
+        -> Nếu nó là inline-block 
+          -> Áp dụng các kĩ thuật điều chỉnh vị trí giành cho inline-block (text-align)
+          
+        -> Nếu nó là block??
+          -> Áp dụng các kĩ thuật điều chỉnh vị trí giành cho block element (margin auto)
 */
 
 
@@ -47,3 +82,52 @@
   height: 200px;
   background-color: blue;
 }
+
+
+.columns-4 {
+  margin-top: 100px;
+  font-size: 0;
+  background-color: pink;
+}
+.columns-4 .item {
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+.columns-4 .item:nth-child(even) {
+  background-color: red;
+  display: inline-block;
+  width: 25%;
+}
+.columns-4 .item:nth-child(odd) {
+  background-color: green;
+  display: inline-block;
+  width: 25%;
+}
+
+
+.block-element {
+  width: 150px;
+  height: 150px;
+  background-color: chocolate;
+}
+
+
+/* 
+
+inline -> chuyển hết về inline-block
+inline-block 
+  font-size 
+  vertical-align
+  text-align 
+
+absolute
+  top
+  left
+  right
+  bottom
+  transform translate 
+
+block 
+  margin auto 
+
+*/
