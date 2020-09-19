@@ -1,0 +1,338 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+::before, ::after {
+  box-sizing: border-box;
+}
+
+
+.container {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+
+/* Mình muốn kích hoạt phần tử giả của một phần tử thật -> phải khai báo nội dung cho phần tử giả đó */
+/* Coi như before after là một phần tử -> Hoàn toàn có thể áp dụng CSS vào phần tử giả đó như một phần tử thật */
+/* Mặc định những phần tử giả có tính chất inline */
+
+.demo-1 {
+  position: relative;
+}
+.demo-1::before {
+  content: "";
+  position: absolute;
+  height: 5px;
+  width: 100px;
+  background-color: red;
+}
+/* .demo-1::after {
+  content: "";
+  display: block;
+} */
+
+
+/* Thêm selector :hover -> Hành động di chuột vào phần tử của người dùng (Sự kiện, events) */
+
+/* Nguyên tắc làm hiệu ứng bằng CSS
+  -> Phải xác định được trạng thái đầu và trạng thái cuối của hiệu ứng.
+  -> Phải xác định được khi nào xảy ra hiệu ứng?
+    -> Hiện tại chỉ dùng CSS thôi (thông thường chỉ có hover, rê chuột)
+*/
+
+
+/* .box-1, .box-2, .box-3, .box-4 { */
+/* attribute selector  [rowspan] */
+[class*="box-"] {
+  width: 200px;
+  height: 200px;
+  background-color: yellow;
+  margin-top: 100px;
+  position: relative;
+}
+.box-1::before {
+  content: "";
+  width: 0%;
+  height: 5px;
+  display: block;
+  position: absolute;
+  background-color: red;
+  bottom: 0;
+  left: 0;
+  transition: width 2s;
+}
+.box-1:hover::before {
+  width: 100%;
+}
+
+.box-2:before {
+  content: "";
+  width: 0%;
+  height: 5px;
+  display: block;
+  position: absolute;
+  background-color: red;
+  bottom: 0;
+  right: 0;
+  transition: width 2s;
+}
+.box-2:hover::before {
+  width: 100%;
+}
+
+/* 
+  display: none (Không hiển thị)
+  display: block (Hiển thị)
+*/
+
+
+
+
+
+
+.box-3::after {
+  content: '';
+  height: 0%;
+  width: 5px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: red;
+  transition: height 500ms;
+}
+
+.box-3:hover::after {
+  height: 100%;
+}
+
+.box-4::after {
+  content: '';
+  height: 0%;
+  width: 5px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: red;
+  transition: height 500ms;
+}
+
+.box-4:hover::after {
+  height: 100%;
+}
+
+
+.box-5::before {
+  top: 0;
+  left: 0;
+}
+.box-5::after {
+  bottom: 0;
+  right: 0;
+}
+.box-5::before, .box-5::after {
+  content: '';
+  width: 0%;
+  height: 5px;
+  background-color: red;
+  position: absolute;
+  transition: width 300ms;
+}
+
+.box-5:hover::after,
+.box-5:hover::before {
+  width: 100%;
+}
+
+.box-6::before {
+  top: 0;
+  left: 0;
+}
+.box-6::after {
+  bottom: 0;
+  right: 0;
+}
+.box-6::before, .box-6::after {
+  content: '';
+  width: 5px;
+  height: 0%;
+  background-color: red;
+  position: absolute;
+  transition: height 300ms;
+}
+
+.box-6:hover::after,
+.box-6:hover::before {
+  height: 100%
+}
+
+.box-7::before {
+  content: '';
+  position: absolute;
+  background-color: red;
+  bottom: 0;
+  left: 0;
+  right: 100%;
+  height: 5px;
+  transition: right 300ms;
+}
+.box-7:hover::before {
+  right: 0;
+}
+
+.box-8::before {
+  /* Canh ben trai */
+  content: '';
+  left: 0;
+  top: 50%;
+  bottom: 50%;
+  width: 5px;
+  position: absolute;
+  background-color: red;
+  transition: top 1s, bottom 1s;
+}
+.box-8:hover::before  {
+  top: 0;
+  bottom: 0;
+}
+
+.box-8::after {
+  /* Canh ben phai */
+  content: '';
+  right: 0;
+  top: 50%;
+  bottom: 50%;
+  width: 5px;
+  position: absolute;
+  background-color: red;
+  transition: top 1s, bottom 1s;
+}
+.box-8:hover::after  {
+  top: 0;
+  bottom: 0;
+}
+
+.box-8 p::before {
+  /* Canh ben duoi */
+  content: '';
+  bottom: 0;
+  left: 50%;
+  right: 50%;
+  height: 5px;
+  background-color: blue;
+  position: absolute;
+  transition: left 1s, right 1s;
+}
+.box-8:hover p::before {
+  left: 0;
+  right: 0;
+}
+
+.box-8 p::after {
+  /* Canh ben duoi */
+  content: '';
+  top: 0;
+  left: 50%;
+  right: 50%;
+  height: 5px;
+  background-color: blue;
+  position: absolute;
+  transition: left 2s, right 2s;
+}
+.box-8:hover p::after {
+  left: 0;
+  right: 0;
+}
+
+
+.box-9::before {
+  content: '';
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  position: absolute;
+  border-top: 5px solid tomato;
+  border-bottom: 5px solid tomato;
+  transition: left 2s, right 2s;
+  pointer-events: none;
+}
+.box-9:hover::before {
+  left: 0;
+  right: 0;
+}
+
+.box-9::after {
+  content: '';
+  top: 50%;
+  left: 0;
+  right: 0;
+  bottom: 50%;
+  position: absolute;
+  border-left: 5px solid purple;
+  border-right: 5px solid purple;
+  transition: top 2s, bottom 2s;
+  pointer-events: none;
+}
+.box-9:hover::after {
+  top: 0;
+  bottom: 0;
+}
+.box-9 {
+  padding: 5px;
+}
+/* .box-9 a {
+  z-index: 1;
+  position: relative;
+} */
+
+
+.box-10::after {
+  content: '';
+    top: 50%;
+    left: 50%;
+    right: 50%;
+    bottom: 50%;
+    /* opacity: 0; */
+    border: 5px solid transparent;
+    position: absolute;
+    transition: all 1s;
+}
+
+.box-10:hover::after {
+  top: 30px;
+  left: 30px;
+  right: 30px;
+  bottom: 30px;
+  border-color: red;
+}
+
+.box-11 {
+  color: black;
+  font-size: 20px;
+  transition: all 1s;
+}
+.box-11 a {
+  color: black;
+  transition: all 1s;
+}
+.box-11:hover, .box-11:hover a {
+  color: blue;
+}
+.box-11::after {
+  content: '';
+  top: 30px;
+  left: 30px;
+  right: 30px;
+  bottom: 30px;
+  /* opacity: 0; */
+  border: 5px solid red;
+  position: absolute;
+  transform: scale(0, 0);
+  transition: all 1s;
+}
+
+.box-11:hover::after {
+  transform: scale(1, 1);
+}
