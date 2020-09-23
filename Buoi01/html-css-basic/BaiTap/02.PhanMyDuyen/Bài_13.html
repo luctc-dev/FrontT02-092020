@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html>
+<head>	
+	<title> Tạo form và các điều khiển </title>
+</head>
+<body>
+<h1 align="center" style="color:#036; font-weight:bold"> ĐĂNG KÍ DU LỊCH</h1>
+<table border="2" align="center" style="color:#004646; background-color:#F9F9F2; font-size:18px" >
+		<tr>
+			<td height="57" >
+				Họ và tên
+			</td>
+			<td  >
+				<input type="text" size="40" >
+			</td>
+		</tr>
+		
+		<tr>
+			<td height="49">
+				Địa chỉ
+			</td>
+			<td>
+				<input type="text" size="30">
+			</td>
+		</tr>
+		
+		<tr>
+			<td height="49">
+				Điện thoại
+			</td>
+			<td>
+				<input type="text" size="20">
+			</td>
+		</tr>
+		
+		<tr>
+			<td height="57">
+				Khách Việt Nam
+			</td>
+			<td>
+				<input type="checkbox">
+			</td>
+		</tr>
+		
+		<tr>
+			<td height="49">
+				Chọn tua
+			</td>
+			<td>
+				<select >
+					<i>
+						<b><optgroup label=" Miền Bắc"> 
+						</b>
+					</i>
+						<option> Hà Nội - Hạ Long - Sa Pa</option>
+						<option> Hà Nội - Chùa Hương - Ninh Bình</option>
+						<option> Hà Nội - Cát Bà - Tuấn Châu</option>
+					</optgroup>
+					<i><b><optgroup label="Miền Trung"></b></i>
+						<option> Huế - Bạch Mã - Đà Nẵng</option>
+						<option> Nha Trang - Đà Lạt </option>
+						<option> Buôn Mê Thuộc - Gia Lai - KomTum </option>
+					</optgroup>
+					<i><b><optgroup label="Miền Nam" ></b></i>
+						<option> Tp Hồ Chí Minh - Cần Thơ - Cà Mau</option>
+						<option> Tp Hồ Chí Minh - Mỹ Tho</option>
+					</optgroup>
+				</select>
+			</td>
+		</tr>
+		
+		<tr>
+			<td height="49"> Phương tiện </td>
+			<td>
+				<input type="radio" name="phuongtien" /> Xe ô tô
+				<input type="radio" name="phuongtien" />
+Máy bay
+				
+			</td>
+		</tr>
+		
+		<tr>
+			<td height="78" colspan="2" align="center">
+				Số lượng đoàn khách <br />
+				Người lớn
+				<input type="text" size="10">
+				Trẻ em
+				<input type="text" size="10">
+			</fieldset>
+				
+			</td>
+		</tr>
+		
+		<tr>
+			<td height="50">
+				Ghi chú thêm
+			</td>
+			<td>
+				<textarea rows="2" cols="39" style="al">
+				</textarea>
+			</td>
+		</tr>
+		
+		<tr>
+			<td colspan="2" align="center">
+				<button type="button" onClick="myFunction()">
+					Đồng ý 
+				</button>
+				<p id="demo"></p>
+				<script>
+					function myFunction()
+					{
+						document.getElementById("demo").innerHTML=" Bạn đã đăng kí thành công!";
+					}
+				</script>
+		</tr>
+	</table>
+</body>
+</html>

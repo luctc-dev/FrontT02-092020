@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bai 08</title>
+	<style>
+		body {
+			padding: 100px 0;
+			
+		}
+		.images {
+			width: 200px;
+		}
+		.table-01 {
+			background-color: #FFEDCA;
+			padding: 10px;
+			margin-left: auto;
+			margin-right: auto;
+			box-shadow: 1px 1px 5px 0 #000;
+		}
+
+		.title {
+			color: #CC6600;
+			margin-top: 0;
+		}
+
+		.table-02 {
+			width: 320px;
+		}
+		.table-02, 
+		.table-02 th, 
+		.table-02 td {
+			border: 1px solid purple;
+			border-collapse: collapse;
+		}
+		.table-02 thead {
+			color: #fff;
+			background-color: #CC6600
+		}
+		.table-02 th:first-child {
+			width: 45px
+		}
+		.table-02 td:first-child {
+			text-align: center;
+		}
+		.table-02 tbody tr:nth-child(odd) {
+			background-color: #fff;
+		}
+		/* Selector của CSS */
+		.va-t {
+			vertical-align: top;
+		}
+	</style>
+</head>
+<body>
+	<!-- tr -> table row
+		td = th -> table data -->
+	<table class="table-01">
+		<tbody>
+		
+				<td class="va-t">
+					<!-- Image -->
+					<img class="images" src="images/bai08.png">
+				</td>
+				<td>
+					<h1 class="title">Các món ngon Hà Nội</h1>
+
+					<!-- Table 02 -->
+					<table class="table-02">
+						<thead>
+							<tr>
+								<th>STT</th>
+								<th>Tên món ăn</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td>Bún chả Hà Nội</td>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>Bún chả Hà Nội</td>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>Bún chả Hà Nội</td>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>Bún chả Hà Nội</td>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>Bún chả Hà Nội</td>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>Bún chả Hà Nội</td>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>Bún chả Hà Nội</td>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>Bún chả Hà Nội</td>
+							</tr>
+						</tbody>
+					</table>
+				</td>
+		</tbody>
+	</table>
+</body>
+</html>

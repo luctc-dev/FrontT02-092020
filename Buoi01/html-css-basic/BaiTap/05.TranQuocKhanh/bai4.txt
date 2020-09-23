@@ -1,0 +1,15 @@
+<html lang="en">
+
+<head>
+</head>
+
+<body>
+    <div class="container" style="text-align: center;">
+
+        <p><a>Trung Tâm Tin Học - KHTN</a></p>
+        <p><a>Chào mừng bạn đến với ngôn ngữ HTML</a></p>
+
+    </div>
+</body>
+
+</html>

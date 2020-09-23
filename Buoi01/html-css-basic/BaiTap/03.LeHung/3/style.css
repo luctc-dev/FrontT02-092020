@@ -1,0 +1,42 @@
+
+* {
+    background-color: #A06D21;
+    color: #FFFFFF;
+    background-image: url("./images/VanLyTruongThanh.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+ h1 {
+    text-align: center;
+    color: #FFCC00;
+}
+/*
+pre {
+    text-align: center;
+    font-size: 18px;
+}
+
+.green {
+    color: #006600;
+}
+
+.me {
+    color: #ff3399;
+    background-color: #F7AEE5;
+}
+
+.blue {
+    color: #0000FF;
+}
+.red {
+    color: red;
+}
+
+
+.yellow {
+    background-color: #ffffcc;
+} 
+
+*/

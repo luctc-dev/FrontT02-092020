@@ -1,0 +1,32 @@
+li1 { 
+    padding-left: 16px; 
+  }
+  
+li1::before {
+    content: "❏"; 
+    padding-right: 8px;
+    color: black;
+}
+table, th, td{
+    border: 1px solid red;
+}
+table{
+    border-collapse: collapse;
+}
+div{
+    color: red;
+    font-weight: bold;
+}
+.class{
+    background-color: #ffbbbb;
+    color: red;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+.class1{
+    background-color: red;
+    color: #ffffff; 
+    text-align: right;
+    font-size: 20px;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <title>Định dạng văn bảng</title>
+        <meta charset="UTF-8">
+        <style>
+            #link{             
+                background: pink;
+                color: purple;
+                list-style-type:none;
+                width: 450pt;
+                font-weight: bold;
+
+            }
+            #link a{
+                color: blue;
+            }
+            table caption{
+                font-weight: bold;
+                color: rgb(231, 63, 91);
+                font-size: 30px;
+            }
+            ol li span{
+                text-align: left;
+                margin-left: 0px;
+                width: auto;
+                background: rgb(231, 63, 91);
+            }
+
+        </style>
+    </head>
+    <body>
+        <table style="width: 100%;">
+            <caption>Công ty Hoa tươi Nhân Ái</caption>
+            <tr>
+                <td style="width: 10%;">
+                    <img src="img/bonghoa.png" style="width: 160px; height: 300px;" >
+                </td>
+                <td>
+                    <div style="text-align: left;">
+                        <ol>
+                            <li> <span>Giới thiệu</span>
+                                <ul style="list-style-type:square">
+                                    <li>Thành lập ngày 25/05/2007</li>
+                                    <li>Chuyên cung cấp các loại hoa tươi</li>
+                                    <li>Có trên 20 cửa hàng bán lẻ tại TP.HCM</li>
+                                    <li>Nhận kế giỏ hoa theo yêu cầu của khách hàng</li>
+                                </ul>
+                            </li>
+                            <hr>
+                            <li><span>Liên hệ</span>
+                                <ul>
+                                    <li>Điện thoại: 84-08-8351056</li>
+                                    <li>Địa chỉ: <i>227 Nguyễn Văn Cừ, Quận 5, TP.HCM</i></li>
+                                    <br>
+                                    <li id="link">&copy Copyright: <a href="https://www.hcmus.edu.vn/" target="_blank">Trung Tâm Tin Học - Đại Học Khoa Học Tự Nhiên TP.HCM</a></li>
+                                </ul>
+                            </li>
+                        </ol>  
+                    </div>            
+                </td>
+            </tr>
+        </table>
+    </body>    
+</html>

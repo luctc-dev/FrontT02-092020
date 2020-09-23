@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		table {
+			width: 500px;
+		}
+		table, td {
+			border-collapse: collapse;
+			border: 1px solid red;
+		}
+		table td:nth-last-child(2), 
+		table td[rowspan]:first-child,
+		table td:last-child:not(:first-child){
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<!-- colspan | rowspan -->
+	<h1>Chương trình học - Ngành Lập trình</h1>
+	<table>
+		<tr>
+			<td rowspan="2">Nhóm học phần</td>
+			<td rowspan="2">Môn học</td>
+			<td colspan="2">Số tiết</td>
+			<!-- <td>demo</td> -->
+		</tr>
+		<tr>
+			<!-- <td>demo</td> -->
+			<!-- <td>demo</td> -->
+			<td>Lý thuyết</td>
+			<td>Thực Hành</td>
+		</tr>
+		<tr>
+			<td rowspan="6">Tin học văn phòng</td>
+			<td>demo</td>
+			<td>demo</td>
+			<td>demo</td>
+		</tr>
+		<tr>
+			<!-- <td>demo</td> -->
+			<td>demo</td>
+			<td>demo</td>
+			<td>demo</td>
+		</tr>
+		<tr>
+			<!-- <td>demo</td> -->
+			<td>demo</td>
+			<td>demo</td>
+			<td>demo</td>
+		</tr>
+		<tr>
+			<!-- <td>demo</td> -->
+			<td>demo</td>
+			<td>demo</td>
+			<td>demo</td>
+		</tr>
+		<tr>
+			<!-- <td>demo</td> -->
+			<td>demo</td>
+			<td>demo</td>
+			<td>demo</td>
+		</tr>
+		<tr>
+			<!-- <td>demo</td> -->
+			<td>demo</td>
+			<td>demo</td>
+			<td>demo</td>
+		</tr>
+		<tr>
+			<td rowspan="2">Kĩ thuật lập trình</td>
+			<td>demo</td>
+			<td>demo</td>
+			<td>demo</td>
+		</tr>
+		<tr>
+			<!-- <td>demo</td> -->
+			<td>demo</td>
+			<td>demo</td>
+			<td>demo</td>
+		</tr>
+		<tr>
+			<td colspan="4">...</td>
+			<!-- <td>demo</td> -->
+			<!-- <td>demo</td> -->
+			<!-- <td>demo</td> -->
+		</tr>
+	</table>
+</body>
+</html>
+
+
+<!-- Web Tĩnh -->
+

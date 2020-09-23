@@ -1,0 +1,22 @@
+table {
+    border-collapse: collapse;
+    border-color: red;
+}
+
+.center{
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+    color: red;
+}
+
+form {
+    width: 350px;
+
+}
+
+#xuat {
+    color: blue;
+}

@@ -1,0 +1,42 @@
+h1 {
+    text-align: center;
+    border-style: double ;
+    border-width: 4px;
+    border-color: rgb(241, 90, 20);
+    color: rgb(241, 90, 20);
+}
+
+.fontcap {
+    color: rgb(138, 29, 29);
+    float: left;
+    display: contents;
+    font: 60px/50px Georgia, Times, serif;
+    font-weight: bold;
+}
+
+h4 {
+    text-align: right;
+    background-color:  rgb(241, 90, 20);
+    color: white;
+    margin: 0;
+}
+
+.red {
+    color: red;
+    font-weight: bold;
+}
+
+#right {
+    text-align: right;;
+}
+
+#underline {
+    text-decoration:  underline;
+    font-weight: bold;
+}
+
+.yellow {
+    color: black;
+    background-color: orange;
+    font-style: italic;
+}

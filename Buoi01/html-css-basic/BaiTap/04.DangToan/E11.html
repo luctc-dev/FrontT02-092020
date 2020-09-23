@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <title>Sử dụng các Tag cơ bản</title>
+        <meta charset="UTF-8">
+        <script>
+            function Output(){
+                var txtIp= document.getElementById('txt');
+                var hiden= document.getElementById('hiden');
+                
+                hiden.style.display="table-cell";
+                hiden.colSpan="2";
+
+                document.getElementById('hiden').innerHTML=txtIp.value;
+            }
+        </script>
+        <style>
+            caption{
+                margin: 10pt 0 10pt 0;
+                font-size: 30px;
+                font-weight: bold;
+                color: orange;
+            }
+            table{
+                width: 270pt;
+                margin: 0 auto;
+                border-collapse: collapse;
+                background: aqua;
+            }
+            table,td{
+                border: 1px solid black;
+                box-sizing:content-box;
+                padding: 5pt;
+            }
+            input{
+                width: 150pt;
+            }
+            button{
+                width: 60pt;
+                height: 20pt;
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <caption>Đăng nhập</caption>
+            <tr>
+                <td>Mã người dùng</td>
+                <td><input id="txt" type="text"></td>
+            </tr>
+            <tr>
+                <td>Mật khấu</td>
+                <td><input type="password"></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;"> <button onclick="Output();" type="submit">Đồng ý</button></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="display: none; text-align: center;" id="hiden" ></td>
+            </tr>
+        </table>
+    </body>    
+</html>

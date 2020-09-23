@@ -1,0 +1,22 @@
+body {
+    background-color: #a06d21;
+}
+
+h1 {
+    color: #ffcc00;
+    text-align: center;
+}
+
+p {
+    color: #ffffff;
+}
+
+#img {
+    background-image: url(VLTT.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 50%;
+    background-position-y: 60px;
+    
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <title>Trang Tạo bảng, trộn dòng và cột</title>
+        <meta charset="UTF-8">
+        <style>
+            table{
+                width: 100%;
+                border-collapse: collapse;              
+            }
+            table, td,th{
+                border:1px solid red;
+            }
+
+            ul li{
+                margin-top: 10pt;
+                color: red;
+                font-weight: bold;
+            }
+            .normal{
+                color: black;
+                font-weight: normal;
+            }
+            td{
+                vertical-align: top;
+            }
+            #h1{
+                background-color: red;
+                color: white;
+                font-size: 20px;
+                font-weight: bold;
+                text-align: right;
+                padding: 5pt 10pt 5pt 0pt;
+            }
+            #h2{
+                font-size: 30px;
+                text-align: center;
+                font-weight: bold;
+                padding: 10pt 0 10pt 0;
+                color: red;
+                background: pink;
+            }
+            .list{
+                list-style-type: square;
+            }
+
+        </style>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td colspan="2" id="h1">Công nghệ dầu gội dưỡng tóc mới</td>
+                <td style="width: 10%;  vertical-align: middle;" rowspan="2" colspan="3"><img src="img/doublerich.PNG" style="width: 80px;height: 100px;"></td>
+            </tr>
+            <tr>
+                <td colspan="2" id="h2" >Tỏa sáng cùng DOUBLE RICH</td>
+            </tr>
+            <tr>
+                <td>
+                    <ul class="list">
+                        <li>Sản phẩm khuyến mãi :
+                            <ul>
+                                <li class="normal">Dầu gọi Double Rich mới 200ml, 400mml có tem khuyến mãi</li>
+                            </ul>
+                        </li>
+                        <li>Đối tượng tham gia :
+                            <ul>
+                                <li class="normal">Áp dụng cho tất cả người tiêu dùng cuối cùng mua sản phẩm khuyến mãi</li>
+                                <li class="normal">Chương trình không áp dụng cho nhân viên, nhà phân phối bao gồm các tổng đại lý
+                                    , đại lý, cửa hàng bán sỉ, lẻ và các cá nhân kinh doanh sản phẩm của công ty LDMP LG Vina, 
+                                    công ty quảng cáo, công ty làm dịch vụ chương trình khuyến mãi này, nhân viên siêu thị.
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </td>
+                <td colspan="2">
+                    <ul class="list">
+                        <li>Cách thức nhận giả : 
+                            <ol>
+                                <li  class="normal"><b><i>Giải khuyến khích: </i></b>
+                                    <span>Khách hàng đổi quà tại các cửa hàng bán lẻ trên toàn quốc.
+                                Bắt đầu từ ngày 15/06/2005 đến 17h ngày 12/08/2005</span>
+                                </li>
+                                <li  class="normal"><b><i>Giải đặc biệt, nhất, nhì: </i></b>
+                                    <span>Khách hàng cắt phần mã vạch trên mỗi chai dầu gọi có khuyến mãi và gởi kèm phiếu
+                                trúng thưởng về văn phòng công ty, hạn chót đến hết ngày 31/07/2005 (căn cứ theo dấu bưu điện nơi gởi)
+                                . Sau đó công ty sẽ gởi thư thông báo trúng thưởng và cách thức nhận quà cho khách hàn.</span>
+                                </li>
+                            </ol>
+                        </li>                  
+                    </ul>
+                </td>          
+            </tr>
+        </table>
+    </body>    
+</html>

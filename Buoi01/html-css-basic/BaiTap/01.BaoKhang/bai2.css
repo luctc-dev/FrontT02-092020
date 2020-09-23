@@ -1,0 +1,41 @@
+h1 {
+    text-align: center;
+}
+
+h2 {
+    color: #0000ff;
+    text-decoration: underline;
+}
+
+#bold {
+    font-weight: bold;
+}
+
+#hong {
+    color: #ff3399;
+    background-color: #f5c5dd;
+    text-align: center;
+}
+
+#vang {
+    background-color: #ffffcc;
+    text-align: center;
+    font-style: italic;
+}
+
+#do {
+    color: red;
+}
+
+#xanhduong {
+    color: #0000ff;
+}
+
+.xanhla  {
+    color: #006600;
+}
+
+hr {
+    width: 30%;
+}
+

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <title>Trang tạo bảng</title>
+        <meta charset="UTF-8">
+        <style>
+            body{
+                background:#FFEDCA ;
+            }
+            caption{
+                font-size: 30px;
+                font-weight: bold;
+                color: #CC6600;
+                margin-bottom: 10pt;
+            }
+            #tab{
+                margin-left: 10pt;
+                border-collapse: collapse;;
+            }
+            #tab,#tab td,#tab th{
+                border: 1px solid black;
+            }
+            #tab th{
+                background: #CC6600;
+                color: white;
+            }
+            .rowColor{
+                background:white;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <table>
+            <tr>
+                <td>
+                    <img src="img/img.png" style="width: 140px;height: 140px;">
+                </td>
+                <td>
+                    <table id="tab" style="width: 300px">
+                        <caption>Các món ngon Hà nội</caption>
+                        <tr>
+                            <th>STT</th>
+                            <th>Tên món ăn</th>
+                        </tr>
+                        <tr>
+                            <td>1.</td>
+                            <td>Bánh cuốn Thanh Trì</td>
+                        </tr>
+                        <tr class="rowColor">
+                            <td>2.</td>
+                            <td>Xôi Hà Nội</td>
+                        </tr>
+                        <tr>
+                            <td>3.</td>
+                            <td>Chả cá Lã Vọng</td>
+                        </tr>
+                        <tr class="rowColor">
+                            <td>4.</td>
+                            <td>Cháo Cóc</td>
+                        </tr>
+                        <tr>
+                            <td>5.</td>
+                            <td>Bánh Gai Ning Giang</td>
+                        </tr>
+                        <tr class="rowColor">
+                            <td>6.</td>
+                            <td>Bun Thang Hà Nội</td>
+                        </tr>
+                        <tr>
+                            <td>7.</td>
+                            <td>Căng Lằng</td>
+                        </tr>
+                        <tr class="rowColor">
+                            <td>8.</td>
+                            <td>Vịt quay Lạng Sơn</td>
+                        </tr>
+                    </table>
+                        
+                </td>
+            </tr>
+        </table>
+        
+    </body>    
+</html>

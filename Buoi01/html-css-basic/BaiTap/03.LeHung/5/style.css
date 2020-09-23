@@ -1,0 +1,48 @@
+/* body {
+  background-image: url("/flower.png");
+
+}
+
+.blue {
+    color: #008888;
+}
+
+.p1 {
+    color: #ffffff;
+    background-color: #008888;
+    font-style: italic;
+    font-weight:bold;
+} */
+h2 {
+    color: #008888;
+    text-align: center;
+}
+.title{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.red {
+    color: #FF0000;
+}
+
+.blue {
+    color: blue;
+}
+
+.bg {
+    background-color: #cccccc;
+    /* text-align: center; */
+}
+
+.ml-20{
+    margin-left: 40%;
+}
+
+.ml-7{
+    margin-left: 7%;
+}

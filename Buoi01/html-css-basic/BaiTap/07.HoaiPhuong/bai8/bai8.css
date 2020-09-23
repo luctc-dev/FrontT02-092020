@@ -1,0 +1,23 @@
+body{
+    background-color: #ffedca;
+}
+img{
+    float: left;
+    width: 250px;
+    height: 300px;
+}
+h1{
+    color: #cc6600;
+}
+table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+table th{
+    color: #ffffff;
+    background-color: #cc6600;
+}
+table tr:nth-child(even){
+    background-color: #ffffff;
+}

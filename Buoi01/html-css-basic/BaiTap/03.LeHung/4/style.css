@@ -1,0 +1,19 @@
+body {
+  background-image: url("/flower.png");
+
+}
+
+.blue {
+    color: #008888;
+}
+
+.p1 {
+    color: #ffffff;
+    background-color: #008888;
+    font-style: italic;
+    font-weight:bold;
+}
+h1 {
+    color: #008888;
+    text-align: center;
+}

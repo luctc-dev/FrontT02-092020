@@ -1,0 +1,18 @@
+body {
+    color: #008888;
+    background-image: url(hoa.jpg);
+    background-repeat: repeat;
+    background-size: 30%;
+    background-attachment: fixed;
+}
+
+#p1 {
+    background-color: #339999;
+    color: #ffffff;
+    font-weight: bold;
+    font-style: italic;
+}
+
+h1{
+    text-align: center;
+}

@@ -1,0 +1,26 @@
+img {
+    float: left;
+    height: 200px;
+    width: 200px;
+    padding-right: 2%;
+    display: block;
+}
+
+h1{
+    text-align: center;
+    color: #cc6600;
+}
+
+table {
+    border-collapse: collapse;;
+}
+
+th.dai{
+    width: 500px;
+}
+
+
+body {
+    background-color: #ffedca;
+}
+

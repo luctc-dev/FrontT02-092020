@@ -1,0 +1,61 @@
+table
+{
+    border-collapse: collapse;
+}
+#dong2 {
+    height: 5px;
+}
+
+#anh {
+    width: 15%;
+
+}
+
+img {
+    width:200px;
+}
+
+#dong3 {
+    background-color: #ffbbbb;
+    color: #ff0000;
+    font-weight: bold;
+    font-size: 28px;
+    text-align: center;
+}
+
+#dong1 {
+    width: 70%;
+    background-color: red;
+    color: white;
+    text-align: right;
+    font-weight: bold;
+    font-size: 18px;
+    
+}
+
+#cot2 {
+    width: 50%;
+    vertical-align: top;
+}
+
+#cot1 {
+    width: 50%;
+    vertical-align: top;
+}
+
+.noidung {
+    margin-left: 20px;
+}
+
+.tieude {
+    font-size: 30px;
+    text-align: left; 
+    list-style-type: square ;
+    color: red;
+}
+
+.tieude1 {
+    font-weight: bold;
+    font-style: italic;
+}
+

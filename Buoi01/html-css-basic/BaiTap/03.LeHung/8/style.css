@@ -1,0 +1,25 @@
+* {
+    background-color: #FDEDCC;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: left;
+    
+}
+
+h1 {
+    text-align: center;
+    color: #D08955;
+}
+
+.tb {
+    display: inline-block;
+}
+
+img {
+    display: inline-block;
+    margin-left: 25%;
+}
+

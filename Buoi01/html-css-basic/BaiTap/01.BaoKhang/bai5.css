@@ -1,0 +1,27 @@
+h2 {
+    color: green;
+    text-align: center;
+}
+
+.b-u {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.red {
+    color: red;
+}
+
+#grey {
+    background-color: #cccccc;
+    color : #0000cc;
+}
+
+#canhle1 {
+    padding-left: 45%;
+}
+
+.canhle2 {
+    padding-left: 30%;
+
+}

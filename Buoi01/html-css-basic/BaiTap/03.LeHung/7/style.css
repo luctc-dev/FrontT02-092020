@@ -1,0 +1,47 @@
+ul {
+    list-style-type:square;
+}
+
+.circle {
+    list-style-type:circle;
+}
+
+.bonghoa {
+    display: inline-block;
+    margin-top: 50px;
+}
+
+.content {
+    /* margin-left: 350px; */
+    display: inline-block;
+
+}
+
+h1 {
+    text-align: center;
+    color: #D34C84;
+}
+
+.bg-pink {
+    color: #ffffff;
+    background-color: #EE4B62;
+    display: inline;
+}
+
+.footer {
+    background-color: #F9EAFA;
+
+}
+
+.copy {
+    color: #836992;
+}
+
+.footer-content {
+    color: #2b3282;
+    text-decoration: underline;
+}
+
+.italic {
+    font-style: italic;
+}
