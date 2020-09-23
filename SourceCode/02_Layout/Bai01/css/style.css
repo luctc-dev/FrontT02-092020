@@ -1,0 +1,87 @@
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+.clearfix {
+	clear: both;
+}
+body {
+	background-color: #b1aea6;
+}
+
+.container {
+	max-width: 750px;
+	margin: 0 auto;
+}
+
+header {
+	height: 50px;
+	padding: 5px 10px;
+	background-color: #e2e2e2
+}
+
+nav.menu {
+	background-color: #c6a7a5;
+}
+nav.menu ul li {
+	list-style: none;
+}
+nav.menu ul li:not(:last-child) {
+	float: left;
+	padding: 7px 10px;
+}
+
+.wrapper-content {
+	background-color: #a5a6ce;
+}
+.wrapper-content .title {
+	margin-bottom: 30px;
+}
+.wrapper-content p {
+	line-height: 1.4;
+	margin-bottom: 20px;
+}
+.wrapper-content ul {
+	padding-left: 20px;
+	list-style-position: inside;
+}
+.content {
+	width: 70%;
+	float: left;
+	background-color: #b1cfa8;
+	padding: 10px 10px 30px 10px;
+}
+
+.sidebar {
+	width: 30%;
+	float: left;
+	padding: 10px 10px 30px 10px;
+}
+
+footer {
+	padding: 5px 10px;
+	background-color: #d1d0a6
+}
+
+/* Nằm dưới */
+@media only screen and (max-width: 750px) {
+	/* .container {
+		width: 100%;
+		padding: 15p;
+	} */
+}
+
+@media only screen and (max-width: 568px) {
+	.content,
+	.sidebar {
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 375px) {
+	nav.menu ul li:not(:last-child) {
+		float: none;
+	}
+}
