@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 100px;
+}
+.clearfix {
+    clear: both;
+}
+.text-center {
+    text-align: center;
+    margin-top: 100px;
+}
+/* 
+    absolute -> relative
+    float -> clear
+    float: left | right 
+    clear: left | right | both -> Loại bỏ sự ảnh hưởng của float ra những phần tử cha
+
+    clear thường đặt ở phía sau phần tử float cuối đặt
+*/
+.row {
+    background-color: yellow;
+}
+
+.row .item {
+    width: 25%;
+    float: left;
+    margin-bottom: 30px;
+}
+.row .item:first-letter {
+    font-size: 40px;
+    color: yellow;
+}
+.row .item:nth-child(even) {
+    color: #fff;
+    background-color: blue;
+}
+.row .item:nth-child(odd) {
+    background-color: red;
+}
+
+
+
+.demo-w3-float {
+    width: 700px;
+    font-family: sans-serif;
+/*     background-color: yellow; */
+}
+.demo-w3-float .images {
+    width: 35%;
+    float: left;
+    padding-right: 25px;
+    /*     background-color: red; */
+    margin-top: 20px;
+}
+.demo-w3-float .images img {
+    width: 100%;
+}
+.demo-w3-float .content {
+    width: 65%;
+    float: left;
+/*     background-color: pink; */
+}
+.demo-w3-float .content p {
+    margin-top: 10px;
+}
+.demo-w3-float .content h1 {
+    font-weight: normal;
+}
+
+
+header {
+    margin-bottom: 20px;
+    padding: 10px;
+    padding-top: 25px;
+    font-family: sans-serif;
+}
+header .logo {
+    float: left;
+    color: #555;
+    font-weight: 700;
+    font-size: 40px;
+}
+header .logo span:last-child {
+    color: #4bbe2e;
+}
+header .slogan {
+    float: right;
+/*     word-spacing: 20px; */
+    letter-spacing: 4px;
+    margin-top: 20px;
+    text-transform: uppercase;
+}

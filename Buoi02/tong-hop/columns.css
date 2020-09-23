@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a, span {
+    display: inline-block;
+}
+
+
+
+
+.container {
+    width: 1000px;
+    padding: 100px 0;
+    margin: 0 auto;
+    background-color: yellow;
+}
+
+
+.table {
+    /* width: 100%; */
+    display: table;
+    margin-left: -20px;
+    margin-right: -20px;
+    /* background-color: pink; */
+    border-spacing: 20px;
+}
+.table .table-cell {
+    display: table-cell;
+    background-color: #dedeff;
+}
+.table .column-1 {
+    width: 70%;
+}
+.table .column-2 {
+    width: 30%;
+}
+.table p {
+    margin-bottom: 15px;
+}
+
+.row {
+    font-size: 0;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+.row .item {
+    width: calc(25% - 20px);
+    font-size: 16px;
+    margin-bottom: 20px;
+    display: inline-block;
+    background-color: deepskyblue;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+.row-2 {
+    font-size: 0;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.row-2 .item-2 {
+    font-size: 16px;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+.row-2.column-2 .item-2 {
+    width: 50%;
+}
+.row-2.column-3 .item-2 {
+    width: 33.333%;
+}
+.row-2.column-4 .item-2 {
+    width: 25%;
+}
+.row-2.column-5 .item-2 {
+    width: 20%;
+}
+
+.product {
+    background-color: aqua;
+    border: 2px solid red;
+}

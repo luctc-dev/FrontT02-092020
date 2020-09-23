@@ -1,0 +1,29 @@
+
+Reset CSS
+    -> box-sizing
+
+Position
+    - static -> Mặc định
+    - relative
+        margin
+        top right, bottom, left
+
+    - absolute
+        -> Đặt ngay relative
+        -> top, right, bottom, left
+        -> Những giá trị % 
+        -> transform, translate (So sánh giá trị % của translate và top)
+
+    - fixed
+    - sticky 
+    
+Float -> Thoải mái IE 6 7
+    -> Phải nhớ tới clear
+
+Display
+    - Inline
+    - Inline Block IE 8
+    - Block
+    - Table, Table-cell
+    - Flex  IE10, 11
+

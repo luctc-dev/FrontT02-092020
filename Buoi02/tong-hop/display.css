@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a, span, textarea {
+    display: inline-block;
+}
+
+
+
+body {
+    padding: 100px;
+}
+.text-center {
+    margin-top: 100px;
+    text-align: center;
+}
+
+
+.block {
+    display: block;
+    width: 150px;
+    height: 150px;
+    background-color: red;
+}
+
+.block.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+.block.right {
+    margin-left: auto;
+    margin-right: 0;
+}
+
+/* Có nhiều bạn hiẻu nhầm phải đưa về display: block; -> Thì mới là block element */
+/* 
+    Khi chugns ta đưa một phần tử inline, inline-block giống như một đoạn text. Giống như một chữ cái
+*/
+
+
+.row {
+    font-size: 0;
+    background-color: yellow;
+}
+.row .item {
+    width: 25%;
+    font-size: 16px;
+    display: inline-block;
+    margin-bottom: 30px;
+    vertical-align: top;
+}
+.row .item:first-letter {
+    font-size: 35px;
+    color: red;
+}
+.row .item:nth-child(even) {
+    background-color: blue;
+    color: #fff;
+}
+.row .item:nth-child(odd) {
+    background-color: purple;
+}
+
+
+
+.demo-w3 {
+    width: 700px;
+    font-size: 0;
+    font-family: sans-serif;
+    background-color: yellow;
+}
+.demo-w3 .images {
+    width: 35%;
+    padding-right: 25px;
+    background-color: red;
+    display: inline-block;
+    vertical-align: middle;
+}
+.demo-w3 .images img {
+    width: 100%;
+}
+.demo-w3 .content {
+    width: 65%;
+    display: inline-block;
+    background-color: pink;
+    font-size: 16px;
+    vertical-align: middle;
+}
+.demo-w3 .content p {
+    margin-top: 10px;
+}
+.demo-w3 .content h1 {
+    font-weight: normal;
+}
+
+
+.banner {
+    background-color: pink;
+    height: 100vh;
+    margin-top: 100px;
+    text-align: center;
+}
+.banner .content {
+    width: 650px;
+    display: inline-block;
+    background-color: yellow;
+    text-align: center;
+    vertical-align: middle;
+}
+.banner span {
+    /* width: 5px; */
+    /* background-color: red; */
+    height: 100vh;
+    vertical-align: middle;
+}
+
+
+.parent {
+    background-color: pink;
+    font-size: 0;
+}
+.parent .inline-block {
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+    background-color: red;
+}
+
+.parent.center {
+    text-align: center;
+}
+.parent.right {
+    text-align: right;
+}
+
+
+.banner-table {
+    display: table;
+    width: 100%;
+    background-color: pink;
+    margin-top: 100px;
+    height: 100vh;
+}
+.banner-table .table-cell {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    background-color: yellow;
+}
+.banner-table .content {
+    width: 650px;
+    display: inline-block;
+    background-color: #deaff8;
+    text-align: center;
+    
+}

@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 100px;
+}
+
+/*
+    top, right, bottom, left
+    position: static | relative | absolute | fixed
+
+    Mặc định nếu như không khai báo gì cả về position thì nó sẽ là static
+
+    position: relative; 
+
+
+    position: absolute; -> Vị trí tương đối
+        top: 0;
+        left: 0;
+        -> Luôn luôn phải xác định phần tử cha nào để nó chạy theo 
+            -> position
+
+    transform
+        translate -> Tịnh tiến
+        transform: translateX(10px) translateY(20px)
+        transform: translate(10px, 20px)
+
+        top: 50% -> Tính theo height của phần tử cha gần nhất có position
+        left: 50% -> Tính theo width của phần tử cha gần nhất có position
+        translateX(50%) -> Tính theo width của chính bản thân nó
+        translateY(50%) -> Tính theo height của chính bản thân nó
+
+    position: fixed -> Có những tính chất giống với absolute
+        1. Fixed luôn luôn chạy theo màn hình
+*/
+
+.box {
+    width: 400px;
+    height: 300px;
+    position: relative;
+    background-color: yellow;
+}
+
+
+.absolute-class {
+    width: 60px;
+    height: 40px;
+    background-color: red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+.absolute-class-2 {
+    height: 50px;
+    background-color: blue;
+}
+
+
+nav {
+    position: fixed;
+    padding: 10px 20px;
+    background-color: #333;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
