@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 100px 0;
+  background-color: pink;
+}
+
+
+/* Tạo layout 4 columns */
+.list-product {
+  display: flex;
+  /* flex-wrap: wrap;
+  flex-direction: row; */
+  flex-flow: row wrap;
+  margin-bottom: 100px;
+  background-color: aqua;
+  justify-content: space-between;
+}
+
+.list-product .product {
+  /* width: 25%; */
+  margin-bottom: 30px;
+  width: calc(33.3333% - 20px);
+  margin-bottom: 30px;
+  
+}
+
+
+
+.list-product .product::first-letter {
+  color: red;
+  font-size: 30px;
+}
+
+.list-product .product:nth-child(even) {
+  background-color: blue;
+  color: #fff;
+}
+.list-product .product:nth-child(odd) {
+  background-color: yellow;
+}
+
+
+
+.row {
+  font-size: 0;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.row [class*="tcl-col-"] {
+  font-size: 16px;
+  display: inline-block;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-bottom: 30px;
+}
+.row .tcl-col-3 {
+  width: 25%;
+}
+.row .tcl-col-4 {
+  width: 33.3333%;
+}
+.row .tcl-col-6 {
+  width: 50%;
+}
+.row .tcl-col-2 {
+  /* Tạo giao diện có 6 column */
+  width: 16.666%;
+}
+.row .tcl-col-2_4 {
+  width: 20%;
+}
+
+/* Grid system */
+.row-flex {
+  margin-left: -15px;
+  margin-right: -15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.row-flex [class*="tcl-col-"] {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-bottom: 30px;
+}
+.row-flex .tcl-col-3 {
+  width: 25%;
+}
+.row-flex .tcl-col-4 {
+  width: 33.3333%;
+}
+.row-flex .tcl-col-6 {
+  width: 50%;
+}
+.row-flex .tcl-col-9 {
+  width: 75%;
+}
+.row-flex .tcl-col-2 {
+  /* Tạo giao diện có 6 column */
+  width: 16.666%;
+}
+.row-flex .tcl-col-2_4 {
+  width: 20%;
+}
+
+
+
+.product-item  {
+  border: 2px solid #333;
+  padding: 20px;
+}
+
+.gallery .title {
+  font-size: 16px;
+  color: #333;
+  font-family: sans-serif;
+  padding: 10px 15px;
+  border: 1px solid #333;
+  border-top: 0;
+}
+.gallery .image img {
+  display: block;
+}
