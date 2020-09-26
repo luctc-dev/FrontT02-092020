@@ -4,19 +4,23 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-img {
-  max-width: 100%;
-}
-
-span, img, a {
-  display: inline-block;
-}
-
 :focus {
   outline: 0;
 }
 
+img {
+  max-width: 100%;
+}
+a {
+  text-decoration: none;
+  transition: color 0.3s;
+}
+span, img, a {
+  display: inline-block;
+}
+ul {
+  list-style-type: none;
+}
 
 /* ============ General ============ */
 
@@ -59,6 +63,9 @@ body {
   padding-left: 15px;
   vertical-align: top;
 }
+.row [class*="tcl-col-"].va-middle {
+  vertical-align: middle;
+}
 .row .tcl-col-3 {
   width: 25%;
 }
@@ -75,6 +82,16 @@ body {
   width: 16.666%;
 }
 
+.tcl-d-flex {
+  display: flex;
+}
+.tcl-ai-center {
+  align-items: center;
+}
+.tcl-jc-between {
+  justify-content: space-between;
+}
+
 /* ============ Header ============ */
 
 .top-header {
@@ -86,6 +103,11 @@ body {
   /* border-bottom: 1px solid red; */
   padding-top: 14px;
   padding-bottom: 10px;
+}
+
+.main-header {
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 
 .form-search .form-control {
@@ -126,4 +148,98 @@ body {
 }
 .form-search .form-control:focus + .icons {
   color: #858585;
+}
+
+.logo-header {
+  max-width: 130px;
+}
+.hotline p {
+  color: #555;
+  font-size: 16px;
+  margin-left: 5px;
+}
+.hotline p span {
+  color: #f9100b;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+
+/* ============= Navigation ============= */
+.menu {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-bottom: 2px solid #cb672e;
+}
+.menu .menu-item {
+  font-size: 16px;
+  font-weight: 700;
+  position: relative;
+  text-transform: uppercase;
+  padding: 12px 24px 8px 24px;
+  transition: background-color 0.3s;
+}
+.menu .menu-item > a {
+  color: #cb672e;
+}
+
+.menu .menu-item:hover, 
+.menu .menu-item.active,
+.menu:hover .menu-item.active:hover {
+  background-color: #cb672e;
+}
+.menu .menu-item:hover > a,
+.menu .menu-item.active > a,
+.menu:hover .menu-item.active:hover > a {
+  color: #fff;
+}
+
+.menu:hover .menu-item.active {
+  background-color: transparent;
+}
+.menu:hover .menu-item.active > a {
+  color: #cb672e;
+}
+
+.menu .sub-menu {
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  top: 100%;
+  width: 180px;
+  position: absolute;
+  background-color: #fff;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: opacity 0.3s;
+  box-shadow: 1px 1px 8px 0 rgba(0,0,0,0.2);
+}
+.menu .menu-item:hover > .sub-menu {
+  opacity: 1;
+  pointer-events: auto;
+}
+.menu .sub-menu li {
+  font-size: 14px;
+  position: relative;
+  text-transform: initial;
+  padding: 8px 24px 6px 24px;
+  transition: background-color 0.3s;
+}
+.menu .sub-menu li > a {
+  color: #cb672e;
+}
+.menu .sub-menu li:hover > a {
+  color: #fff;
+}
+.menu .sub-menu li:hover {
+  background-color: #cb672e;
+}
+.menu .sub-menu .sub-menu {
+  top: -10px;
+  left: 100%;
+  opacity: 0;
+  pointer-events: none;
+}
+.menu .sub-menu li:hover > .sub-menu {
+  opacity: 1;
+  pointer-events: auto;
 }
