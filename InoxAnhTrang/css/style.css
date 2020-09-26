@@ -1,0 +1,129 @@
+/* ========== Reset CSS ============= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+span, img, a {
+  display: inline-block;
+}
+
+:focus {
+  outline: 0;
+}
+
+
+/* ============ General ============ */
+
+body {
+  color: #555;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.285;
+  background-image: url("../images/background.jpg");
+  font-family: 'Roboto', sans-serif;
+  min-height: 2000px; 
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.test {
+  background-image: url(../images/01-home-anhtrang.jpg);
+  width: 100%;
+  height: 3000px;
+  background-position: 239px 0px;
+  background-repeat: no-repeat;
+  position: absolute;
+  opacity: 0.4;
+}
+
+/* ============ Grid System ============ */
+
+.row {
+  font-size: 0;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.row [class*="tcl-col-"] {
+  font-size: 16px;
+  display: inline-block;
+  padding-right: 15px;
+  padding-left: 15px;
+  vertical-align: top;
+}
+.row .tcl-col-3 {
+  width: 25%;
+}
+.row .tcl-col-4 {
+  width: 33.3333%;
+}
+.row .tcl-col-6 {
+  width: 50%;
+}
+.row .tcl-col-9 {
+  width: 75%;
+}
+.row .tcl-col-2 {
+  width: 16.666%;
+}
+
+/* ============ Header ============ */
+
+.top-header {
+  color: #0c8597;
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+  border-bottom: 1px solid #e9e9e9;
+  /* border-bottom: 1px solid red; */
+  padding-top: 14px;
+  padding-bottom: 10px;
+}
+
+.form-search .form-control {
+  display: block;
+  border: 1px solid #e1e1e1;
+  border-radius: 4px;
+  height: 35px;
+  padding-left: 15px;
+  padding-right: 35px;
+  font-size: 13px;
+  color: #333;
+  width: 100%;
+  transition: border-color 0.3s;
+}
+
+.form-search .form-group {
+  position: relative;
+}
+.form-search .form-control::-webkit-input-placeholder { /* Edge */
+  color: #999;
+}
+.form-search .form-control:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #999;
+}
+.form-search .form-control::placeholder {
+  color: #999;
+}
+.form-search .icons {
+  position: absolute;
+  right: 12px;
+  top: 5px;
+  color: #999;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+.form-search .form-control:focus {
+  border-color: #858585;
+}
+.form-search .form-control:focus + .icons {
+  color: #858585;
+}
