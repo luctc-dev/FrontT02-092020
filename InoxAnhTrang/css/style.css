@@ -230,9 +230,6 @@ body {
 .menu .sub-menu li:hover > a {
   color: #fff;
 }
-.menu .sub-menu li:hover {
-  background-color: #cb672e;
-}
 .menu .sub-menu .sub-menu {
   top: -10px;
   left: 100%;
