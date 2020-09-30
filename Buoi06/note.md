@@ -31,3 +31,4 @@ Team Lead -> review code nhánh A
   git commit -m "mo ta ...."
   git push origin -u feat/luc-tc 
 4. Sau khi đã có nhánh trên server của git rồi thì không cần "-u" nữa
+5. Chuyển đổi qua lại giữa các nhánh khác với nhau (Không sửa code)
