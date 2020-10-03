@@ -244,6 +244,38 @@ body {
   pointer-events: auto;
 }
 
+/* ===========body=================== */
+main {
+  margin-top: 15px;
+}
+.row-1{
+  background-color: white;
+  margin-bottom: 15px;
+}
+.row-1 p{
+  font-size: 16px;
+  font-weight: 700;
+  background-color: #cb672e;
+  color: #ffffff;
+  padding: 10px 15px;
+  text-transform: uppercase;
+}
+.row-1-item{
+  padding: 20px 30px 18px 15px;
+}
+.row-1 li{
+  margin-bottom: 10px;
+  padding: 5px 0px;
+}
+.row-1-item span{
+  font-size: 14px;
+  font-weight: 500;
+}
+.row-1-item .text-item{
+  padding-left: 4px;
+}
+
+
 
 /* ============== Footer ============= */
 footer {
