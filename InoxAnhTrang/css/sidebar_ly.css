@@ -1,0 +1,40 @@
+.sidebar-item__title {
+  background-color: #d36b30;
+  padding: 8px 15px;
+}
+span.sidebar-item__title--text {
+  font-weight: 500;
+  text-transform: uppercase;
+
+  color: #edd0c0;
+}
+.sidebar-item__title {
+  display: flex;
+  justify-content: space-between;
+}
+.iconl {
+  color: #edd0c0;
+}
+.sidebar-item__content.sidebar-item__contact {
+  padding: 10px 0px;
+  padding-left: 15px;
+}
+.sidebar-item {
+  margin-bottom: 14px;
+}
+.text {
+  color: #656565;
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+.ph {
+  color: red;
+  font-weight: 500;
+}
+.sidebar-item {
+  background-color: #fff;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+.sidebar-item__content.sidebar-item__contact {
+  margin-top: 6px;
+}
