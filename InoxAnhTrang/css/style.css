@@ -260,7 +260,7 @@ body {
   pointer-events: auto;
 }
 /* content+sidebar */
-.wrapper-sidebar{
+/* .wrapper-sidebar{
   margin-bottom: 16px;
 }
 .sidebar{
@@ -318,7 +318,7 @@ body {
   color: #f9100b;
   font-weight: 700;
 
-}
+} */
 /* ============== Footer ============= */
 footer {
   margin-top: 50px;

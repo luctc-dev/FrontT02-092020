@@ -13,6 +13,7 @@
 
   <!-- Css của chúng ta tự viết -->
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="./css/siderin.css">
 </head>
 <body>
   <!-- <div class="test"></div> -->
@@ -25,7 +26,7 @@
 
       <!-- Main Header -->
       <div class="main-header">
-        <div class="row gutters-15">
+        <div class="row">
           <div class="tcl-col-9 va-middle">
             <div class="tcl-d-flex tcl-jc-between">
               <div class="logo-header">
@@ -50,49 +51,84 @@
       <!-- End Main Header -->
     </div>
   </header>
-
+  <nav id="menu">
+    <div class="container">
+      <ul class="menu tcl-d-flex">
+        <li class="menu-item"><a href="#">Tủ nấu cơm</a></li>
+        <li class="menu-item">
+          <a href="#">Tủ nấu cơm gas</a>
+          <ul class="sub-menu">
+            <li><a href="#">Sub Tủ nấu cơm</a></li>
+            <li><a href="#">Sub Tủ nấu cơm</a></li>
+            <li>
+              <a href="#">Sub Tủ nấu cơm</a>
+              <ul class="sub-menu">
+                <li><a href="#">Sub Tủ nấu cơm</a></li>
+                <li><a href="#">Sub Tủ nấu cơm</a></li>
+                <li>
+                  <a href="#">Sub Tủ nấu cơm</a>
+                  <ul class="sub-menu">
+                    <li><a href="#">Sub Tủ nấu cơm</a></li>
+                    <li><a href="#">Sub Tủ nấu cơm</a></li>
+                    <li><a href="#">Sub Tủ nấu cơm</a></li>
+                    <li><a href="#">Sub Tủ nấu cơm</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Sub Tủ nấu cơm</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Sub Tủ nấu cơm</a></li>
+          </ul>
+        </li>
+        <li class="menu-item"><a href="#">Tủ nấu cơm điên</a></li>
+        <li class="menu-item active"><a href="#">Linh kiện tủ nấu cơm</a></li>
+        <li class="menu-item"><a href="#">Tủ nấu cơm</a></li>
+        <li class="menu-item"><a href="#">Liên hệ</a></li>
+      </ul>
+    </div>
+  </nav>
   <main>
     <div class="container">
       <div class="row">
-        <div class="tcl-col-9">
+        <div class="tcl-col-9 va-middle ">
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo quibusdam laboriosam reiciendis exercitationem quaerat corporis eligendi, accusantium et, labore sequi porro eveniet officia dolorum ipsa nobis soluta adipisci facere. Commodi!</p>
         </div>
-        <div class="tcl-col-3">
+        <div class="tcl-col-3 va-middle">
           <!-- aside thẻ của HTML5 -->
           <aside class="sidebar">
             
             <!-- Start Sidebar Item Contact -->
             <div class="sidebar-item">
-              <div class="sidebar-item__title">
+              <div class="sidebar-item__title tcl-d-flex tcl-jc-between">
                 <span class="sidebar-item__title--text">Liên hệ</span>
                 <span class="sidebar-item__title--icons ion-android-arrow-dropright-circle"></span>
               </div>
               <div class="sidebar-item__content sidebar-item__contact">
-                <div class="row no-gutters">
+                <div class="row no-gutters sidebar-contact-item sidebar-contact-item">
                   <div class="tcl-col-6">
                     <span class="icons ion-chatboxes"></span>
                     <span class="text">Khach hang</span>
                   </div>
                   <div class="tcl-col-6">
-                    0343423114
+                    <span class="sidebar-phone">0343423114</span>
                   </div>
                 </div>
-                <div class="row no-gutters">
+                <div class="row no-gutters sidebar-contact-item">
                   <div class="tcl-col-6">
                     <span class="icons ion-chatboxes"></span>
                     <span class="text">Khach hang</span>
                   </div>
                   <div class="tcl-col-6">
-                    0343423114
+                    <span class="sidebar-phone">0343423114</span>
                   </div>
                 </div>
-                <div class="row no-gutters">
+                <div class="row no-gutters sidebar-contact-item">
                   <div class="tcl-col-6">
                     <span class="icons ion-chatboxes"></span>
                     <span class="text">Khach hang</span>
                   </div>
                   <div class="tcl-col-6">
-                    0343423114
+                    <span class="sidebar-phone">0343423114</span>
                   </div>
                 </div>
                 <div class="row no-gutters">
@@ -110,8 +146,8 @@
 
             <!-- Start Sidebar Item List Blog Categories -->
             <div class="sidebar-item">
-              <div class="sidebar-item__title">
-                <span class="sidebar-item__title--text">Liên hệ</span>
+              <div class="sidebar-item__title tcl-d-flex tcl-jc-between">
+                <span class="sidebar-item__title--text">Blog nấu cơm</span>
                 <span class="sidebar-item__title--icons ion-android-arrow-dropright-circle"></span>
               </div>
               <div class="sidebar-item__content blog-categoies">
@@ -128,15 +164,29 @@
 
             <!-- Start Sidebar Item List Blog -->
             <div class="sidebar-item">
-              <div class="sidebar-item__title">
-                <span class="sidebar-item__title--text">Liên hệ</span>
+              <div class="sidebar-item__title tcl-d-flex tcl-jc-between">
+                <span class="sidebar-item__title--text">Danh sách khách hàng</span>
                 <span class="sidebar-item__title--icons ion-android-arrow-dropright-circle"></span>
               </div>
               <div class="sidebar-item__content list-blogs">
                 
                 <!-- Start List Blogs Item -->
                 <div class="list-blogs__item">
-                  <div class="list-blogs__head">
+                  <div class="list-blogs__head tcl-d-flex tcl-jc-between ">
+                    <div class="list-blogs__thumbnail">
+                      <img src="https://dienmaynewsun.com/wp-content/uploads/2018/08/tu-nau-com-10-khay-dung-dien-nhap-khau.jpg" alt="">
+                    </div>
+                    <div class="list-blogs__title">
+                      <a href="#">Học viện Khoa học Quân sự tin dùng tủ nấu cơm</a>
+                    </div>
+                   <div class="list-line"></div>
+                  </div>
+                  <p class="list-blogs__desc">Tủ nấu cơm là thiết bị thông dụng, được sử dụng phổ biến ở hệ thống nhà hàng, trường học...</p>
+                </div>
+                <!-- End List Blogs Item -->
+                <!-- Start List Blogs Item -->
+                <div class="list-blogs__item">
+                  <div class="list-blogs__head tcl-d-flex tcl-jc-between ">
                     <div class="list-blogs__thumbnail">
                       <img src="https://dienmaynewsun.com/wp-content/uploads/2018/08/tu-nau-com-10-khay-dung-dien-nhap-khau.jpg" alt="">
                     </div>
@@ -147,10 +197,9 @@
                   <p class="list-blogs__desc">Tủ nấu cơm là thiết bị thông dụng, được sử dụng phổ biến ở hệ thống nhà hàng, trường học...</p>
                 </div>
                 <!-- End List Blogs Item -->
-
                 <!-- Start List Blogs Item -->
                 <div class="list-blogs__item">
-                  <div class="list-blogs__head">
+                  <div class="list-blogs__head tcl-d-flex tcl-jc-between ">
                     <div class="list-blogs__thumbnail">
                       <img src="https://dienmaynewsun.com/wp-content/uploads/2018/08/tu-nau-com-10-khay-dung-dien-nhap-khau.jpg" alt="">
                     </div>
@@ -161,10 +210,22 @@
                   <p class="list-blogs__desc">Tủ nấu cơm là thiết bị thông dụng, được sử dụng phổ biến ở hệ thống nhà hàng, trường học...</p>
                 </div>
                 <!-- End List Blogs Item -->
-
                 <!-- Start List Blogs Item -->
                 <div class="list-blogs__item">
-                  <div class="list-blogs__head">
+                  <div class="list-blogs__head tcl-d-flex tcl-jc-between ">
+                    <div class="list-blogs__thumbnail">
+                      <img src="https://dienmaynewsun.com/wp-content/uploads/2018/08/tu-nau-com-10-khay-dung-dien-nhap-khau.jpg" alt="">
+                    </div>
+                    <div class="list-blogs__title">
+                      <a href="#">Học viện Khoa học Quân sự tin dùng tủ nấu cơm</a>
+                    </div>
+                  </div>
+                  <p class="list-blogs__desc">Tủ nấu cơm là thiết bị thông dụng, được sử dụng phổ biến ở hệ thống nhà hàng, trường học...</p>
+                </div>
+                <!-- End List Blogs Item -->
+                <!-- Start List Blogs Item -->
+                <div class="list-blogs__item">
+                  <div class="list-blogs__head tcl-d-flex tcl-jc-between ">
                     <div class="list-blogs__thumbnail">
                       <img src="https://dienmaynewsun.com/wp-content/uploads/2018/08/tu-nau-com-10-khay-dung-dien-nhap-khau.jpg" alt="">
                     </div>
@@ -212,42 +273,7 @@
     </div>
   </main>
 
-  <nav id="menu">
-    <div class="container">
-      <ul class="menu tcl-d-flex">
-        <li class="menu-item"><a href="#">Tủ nấu cơm</a></li>
-        <li class="menu-item">
-          <a href="#">Tủ nấu cơm gas</a>
-          <ul class="sub-menu">
-            <li><a href="#">Sub Tủ nấu cơm</a></li>
-            <li><a href="#">Sub Tủ nấu cơm</a></li>
-            <li>
-              <a href="#">Sub Tủ nấu cơm</a>
-              <ul class="sub-menu">
-                <li><a href="#">Sub Tủ nấu cơm</a></li>
-                <li><a href="#">Sub Tủ nấu cơm</a></li>
-                <li>
-                  <a href="#">Sub Tủ nấu cơm</a>
-                  <ul class="sub-menu">
-                    <li><a href="#">Sub Tủ nấu cơm</a></li>
-                    <li><a href="#">Sub Tủ nấu cơm</a></li>
-                    <li><a href="#">Sub Tủ nấu cơm</a></li>
-                    <li><a href="#">Sub Tủ nấu cơm</a></li>
-                  </ul>
-                </li>
-                <li><a href="#">Sub Tủ nấu cơm</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Sub Tủ nấu cơm</a></li>
-          </ul>
-        </li>
-        <li class="menu-item"><a href="#">Tủ nấu cơm điên</a></li>
-        <li class="menu-item active"><a href="#">Linh kiện tủ nấu cơm</a></li>
-        <li class="menu-item"><a href="#">Tủ nấu cơm</a></li>
-        <li class="menu-item"><a href="#">Liên hệ</a></li>
-      </ul>
-    </div>
-  </nav>
+  
       <!-- rin sidebar -->
   <div class="container">
     <div class="main-sidebar">
