@@ -311,7 +311,7 @@
     font-size: 14px;
     font-weight: 700;
     display: inline-block;
-
+    cursor: pointer;
   }
   .login{
     background-color: #0c8597;
