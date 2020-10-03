@@ -13,6 +13,7 @@
 
   <!-- Css của chúng ta tự viết -->
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="./css/sidebar-thanh.css">
 </head>
 <body>
   <!-- <div class="test"></div> -->
@@ -26,7 +27,7 @@
 
       <!-- Main Header -->
       <div class="main-header">
-        <div class="row gutters-15">
+        <div class="row">
           <div class="tcl-col-9 va-middle">
             <div class="tcl-d-flex tcl-jc-between">
               <div class="logo-header">
@@ -53,6 +54,45 @@
   </header>
   <!-- ========================end header===================== -->
 
+  <!-- navigation -->
+  <nav id="menu">
+    <div class="container">
+      <ul class="menu tcl-d-flex">
+        <li class="menu-item"><a href="#">Tủ nấu cơm</a></li>
+        <li class="menu-item">
+          <a href="#">Tủ nấu cơm gas</a>
+          <ul class="sub-menu">
+            <li><a href="#">Sub Tủ nấu cơm</a></li>
+            <li><a href="#">Sub Tủ nấu cơm</a></li>
+            <li>
+              <a href="#">Sub Tủ nấu cơm</a>
+              <ul class="sub-menu">
+                <li><a href="#">Sub Tủ nấu cơm</a></li>
+                <li><a href="#">Sub Tủ nấu cơm</a></li>
+                <li>
+                  <a href="#">Sub Tủ nấu cơm</a>
+                  <ul class="sub-menu">
+                    <li><a href="#">Sub Tủ nấu cơm</a></li>
+                    <li><a href="#">Sub Tủ nấu cơm</a></li>
+                    <li><a href="#">Sub Tủ nấu cơm</a></li>
+                    <li><a href="#">Sub Tủ nấu cơm</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Sub Tủ nấu cơm</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Sub Tủ nấu cơm</a></li>
+          </ul>
+        </li>
+        <li class="menu-item"><a href="#">Tủ nấu cơm điên</a></li>
+        <li class="menu-item active"><a href="#">Linh kiện tủ nấu cơm</a></li>
+        <li class="menu-item"><a href="#">Tủ nấu cơm</a></li>
+        <li class="menu-item"><a href="#">Liên hệ</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- ================ end navigation ================== -->
+
   <main>
     <div class="container">
       <div class="row">
@@ -70,40 +110,48 @@
                 <span class="sidebar-item__title--icons ion-android-arrow-dropright-circle"></span>
               </div>
               <div class="sidebar-item__content sidebar-item__contact">
-                <div class="row no-gutters">
+                <div class="row no-gutters sidebar-contact__item">
                   <div class="tcl-col-6">
-                    <span class="icons ion-chatboxes"></span>
-                    <span class="text">Khach hang</span>
+                    <div class="tcl-d-flex">
+                      <span class="icons ion-chatboxes"></span>
+                      <span class="text">Hotline:</span>
+                    </div>
                   </div>
                   <div class="tcl-col-6">
-                    0343423114
-                  </div>
-                </div>
-                <div class="row no-gutters">
-                  <div class="tcl-col-6">
-                    <span class="icons ion-chatboxes"></span>
-                    <span class="text">Khach hang</span>
-                  </div>
-                  <div class="tcl-col-6">
-                    0343423114
+                    <span class="hotline">0343423114</span> 
                   </div>
                 </div>
-                <div class="row no-gutters">
+                <div class="row no-gutters sidebar-contact__item">
                   <div class="tcl-col-6">
-                    <span class="icons ion-chatboxes"></span>
-                    <span class="text">Khach hang</span>
+                    <div class="tcl-d-flex">
+                      <span class="icons ion-chatboxes"></span>
+                      <span class="text">Chăm sóc KH:</span>
+                    </div>
                   </div>
                   <div class="tcl-col-6">
-                    0343423114
+                    <span class="hotline">0343423114</span> 
                   </div>
                 </div>
-                <div class="row no-gutters">
+                <div class="row no-gutters sidebar-contact__item">
                   <div class="tcl-col-6">
-                    <span class="icons ion-chatboxes"></span>
-                    <span class="text">Khach hang</span>
+                    <div class="tcl-d-flex">
+                      <span class="icons ion-chatboxes"></span>
+                      <span class="text">Ý kiến KH: </span>
+                    </div>
                   </div>
                   <div class="tcl-col-6">
-                    <img src="./images/icon-skype.png" alt="">
+                    <span class="hotline">0343423114</span> 
+                  </div>
+                </div>
+                <div class="row no-gutters sidebar-contact__item">
+                  <div class="tcl-col-6">
+                    <div class="tcl-d-flex">
+                      <span class="icons ion-chatboxes"></span>
+                      <span class="text">Kinh doanh:</span>
+                    </div>
+                  </div>
+                  <div class="tcl-col-6">
+                    <span class="hotline"> <img src="./images/icon-skype.png" alt=""> </span>
                   </div>
                 </div>
               </div>
@@ -113,12 +161,12 @@
             <!-- Start Sidebar Item List Blog Categories -->
             <div class="sidebar-item">
               <div class="sidebar-item__title">
-                <span class="sidebar-item__title--text">Liên hệ</span>
+                <span class="sidebar-item__title--text">Blog tủ nấu cơm</span>
                 <span class="sidebar-item__title--icons ion-android-arrow-dropright-circle"></span>
               </div>
               <div class="sidebar-item__content blog-categoies">
                 <ul>
-                  <li><a href="#"><span class="icons ion-ios-arrow-forward"></span> Hướng dẫn sử dụng</a></li>
+                  <li><a href="#"><span class="icons ion-ios-arrow-forward"></span> Hướng dẫn sử dụng </a></li>
                   <li><a href="#"><span class="icons ion-ios-arrow-forward"></span> Hướng dẫn sử dụng</a></li>
                   <li><a href="#"><span class="icons ion-ios-arrow-forward"></span> Hướng dẫn sử dụng</a></li>
                   <li><a href="#"><span class="icons ion-ios-arrow-forward"></span> Hướng dẫn sử dụng</a></li>
@@ -131,7 +179,7 @@
             <!-- Start Sidebar Item List Blog -->
             <div class="sidebar-item">
               <div class="sidebar-item__title">
-                <span class="sidebar-item__title--text">Liên hệ</span>
+                <span class="sidebar-item__title--text">Danh sách khách hàng</span>
                 <span class="sidebar-item__title--icons ion-android-arrow-dropright-circle"></span>
               </div>
               <div class="sidebar-item__content list-blogs">
@@ -187,7 +235,7 @@
             <!-- Start Sidebar Item Fanpage -->
             <div class="sidebar-item">
               <div class="sidebar-item__title">
-                <span class="sidebar-item__title--text">Liên hệ</span>
+                <span class="sidebar-item__title--text">Theo dõi facebook</span>
                 <span class="sidebar-item__title--icons ion-android-arrow-dropright-circle"></span>
               </div>
               <div class="sidebar-item__content fanpage">
@@ -199,7 +247,7 @@
             <!-- Start Sidebar Item List Blog 02 -->
             <div class="sidebar-item">
               <div class="sidebar-item__title">
-                <span class="sidebar-item__title--text">Liên hệ</span>
+                <span class="sidebar-item__title--text">Thùng rác</span>
                 <span class="sidebar-item__title--icons ion-android-arrow-dropright-circle"></span>
               </div>
               <div class="sidebar-item__content list-blogs-style-02">
@@ -213,44 +261,6 @@
       </div>
     </div>
   </main>
-
-  <nav id="menu">
-    <div class="container">
-      <ul class="menu tcl-d-flex">
-        <li class="menu-item"><a href="#">Tủ nấu cơm</a></li>
-        <li class="menu-item">
-          <a href="#">Tủ nấu cơm gas</a>
-          <ul class="sub-menu">
-            <li><a href="#">Sub Tủ nấu cơm</a></li>
-            <li><a href="#">Sub Tủ nấu cơm</a></li>
-            <li>
-              <a href="#">Sub Tủ nấu cơm</a>
-              <ul class="sub-menu">
-                <li><a href="#">Sub Tủ nấu cơm</a></li>
-                <li><a href="#">Sub Tủ nấu cơm</a></li>
-                <li>
-                  <a href="#">Sub Tủ nấu cơm</a>
-                  <ul class="sub-menu">
-                    <li><a href="#">Sub Tủ nấu cơm</a></li>
-                    <li><a href="#">Sub Tủ nấu cơm</a></li>
-                    <li><a href="#">Sub Tủ nấu cơm</a></li>
-                    <li><a href="#">Sub Tủ nấu cơm</a></li>
-                  </ul>
-                </li>
-                <li><a href="#">Sub Tủ nấu cơm</a></li>
-              </ul>
-            </li>
-            <li><a href="#">Sub Tủ nấu cơm</a></li>
-          </ul>
-        </li>
-        <li class="menu-item"><a href="#">Tủ nấu cơm điên</a></li>
-        <li class="menu-item active"><a href="#">Linh kiện tủ nấu cơm</a></li>
-        <li class="menu-item"><a href="#">Tủ nấu cơm</a></li>
-        <li class="menu-item"><a href="#">Liên hệ</a></li>
-      </ul>
-    </div>
-  </nav>
-  <!-- ================ end navigation ================== -->
 
   <!-- body  -->
   <main>
