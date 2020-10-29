@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      min-height: 3000px;
+    }
+    .container {
+      width: 1170px;
+      padding: 100px 0;
+      margin: auto;
+    }
+    .box {
+      width: 400px;
+      height: 300px;
+      position: relative;
+      background-color: yellow;
+      margin-top: 1000px;
+    }
+    .child {
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      background-color: red;
+      top: 20px;
+      left: 0px;
+    }
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      transition: 0.3s;
+      transform: translateY(0);
+    }
+    header.hidden-menu {
+      transform: translateY(-100%);
+    }
+    nav {
+      color: #fff;
+      padding: 20px 30px;
+      background-color: #333;
+    }
+    nav a {
+      color: #fff
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">Trang chu</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="container">
+    <div class="box">
+      <div class="child" target-number="300" duration="10000"></div>
+    </div>
+  </div>
+</body>
+  <!-- <script src="main.js"></script> -->
+  <!-- <script src="main-2.js"></script> -->
+  <script src="main-3.js"></script>
+</html>
