@@ -1,0 +1,150 @@
+/* ======== 01. Reset CSS ======== */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+  a, span, i {
+    display: inline-block;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  :focus {
+    outline: none;
+  }
+
+  body {
+    color: #7a7a7a;
+    font-size: 14px; 
+    font-weight: 400;
+    line-height: 1.7;
+    font-family: 'Lato', sans-serif;
+  }
+
+/* ======== 02. General ======== */
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .btn {
+    color: #fff;
+    cursor: pointer;
+    padding: 11px 21px;
+  }
+
+  .btn-primary {
+    border: 1px solid #304771;
+    background-color: #304771;
+  }
+  .btn-primary:hover {
+    transition: 0.3s ease;
+    border-color: #c8ac48;
+    background-color: #c8ac48;
+  }
+
+  /* Grid System */
+
+/* ======== 03. Header ======== */
+  .header-top {
+    border-bottom: 1px solid #ededed;
+  }
+  .header-top__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .header-top__btns,
+  .header-top__right {
+    display: flex;
+  }
+  .header-top__right {
+    align-items: center;
+  }
+
+  .header-top__btns li {
+    margin-left: 15px;
+  }
+
+  .header-top .social-list,
+  .header-top .contact-list {
+    display: flex;
+  }
+
+  .header-top .contact-list {
+    font-size: 13px;
+  }
+
+  .header-top .social-list a, 
+  .header-top .contact-list a {
+    color: #7a7a7a;
+  }
+
+  .header-top .social-list a {
+    padding: 5px 15px;
+    font-size: 15px;
+  }
+  .header-top .contact-list a {
+    padding: 5px;
+    padding-right: 15px;
+  }
+  .header-top .contact-list .icons {
+    padding-right: 5px;
+    font-size: 16px;
+  }
+
+
+  .header-main__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  .header-main__right {
+    display: flex;
+  }
+
+  .header-main .logo {
+    display: flex;
+    align-items: center;
+  }
+  .header-main_menus {
+    display: flex;
+  }
+  .header-main_menus .menu-item a {
+    padding: 40px 0; 
+  }
+
+  .search-form {
+    right: 0;
+    top: 100%;
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    background-color: purple;
+    transition: 0.3s;
+  }
+  .icon-search {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 0 15px;
+    background-color: aqua;
+  }
+  .icon-search:hover .search-form {
+    opacity: 1;
+    pointer-events: auto;
+  }
+/* ======== 04. Footer ======== */
+
+
+/* ======== 05. Slider - Carousel ======== */
