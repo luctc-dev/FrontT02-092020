@@ -1,3 +1,4 @@
+debugger;
 var audioEl = document.querySelector('#audio');
 var divWrapper = document.querySelector('.custom-audio');
 var playBtn = divWrapper.querySelector('.play'); 
@@ -14,7 +15,6 @@ var isMouseMove = false;
 
   var intervalId = setInterval(() => {
     var duration = audioEl.duration;
-
     if (audioEl.duration) {
       var minutes = Math.floor(duration / 60);
       var seconds = Math.floor(duration - minutes * 60); // Math.floor, Math.ceil, Math.round
@@ -71,7 +71,7 @@ durationBar.addEventListener('click', function(evt) {
 
   var durationBarRect = durationBar.getBoundingClientRect();
 
-  var offsetX = evt.offsetX;
+  var offsetX = evt.offsetX; 
   var widthDurationBar = durationBarRect.width;
 
   var percent = offsetX / widthDurationBar;
