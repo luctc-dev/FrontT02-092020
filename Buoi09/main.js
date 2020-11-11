@@ -24,6 +24,8 @@ Events: (Những sự kiện tương tác của người dùng, click chuột, m
   Có sự kiện "lắng nghe" việc người dùng nhập nội dung vào một element
 */
 
+
+
 var formLoginData = {
   email: {
     value: '',
@@ -66,6 +68,7 @@ function validatePassword(password) {
 }
 
 function handleChangeEmail(event) {
+  debugger;
   var email = formLoginData.email;
   email.value = event.target.value;
 

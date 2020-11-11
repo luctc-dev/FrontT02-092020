@@ -1,0 +1,7 @@
+
+@media only screen and (max-width: 1170px) {
+  /* Nếu màn hình <= 1170px chạy đoạn code trong này */
+  .container {
+    width: 100%; 
+  }
+}
