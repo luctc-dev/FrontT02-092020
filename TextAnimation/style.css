@@ -1,0 +1,40 @@
+.banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000;
+  color: #fff;
+  font-family: cursive;
+}
+
+.text-animation {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+}
+.text-animation span {
+  transform: translateY(-50px);
+  display: inline-block;
+  opacity: 0;
+  transition: 0.3s;
+  color: #fff;
+}
+.text-animation span.show {
+  transform: translateY(0);
+  opacity: 1;
+  color: aqua;
+}
+
+
+.banner {
+  opacity: 1;
+  transition: 0.3s;
+}
+.banner.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
