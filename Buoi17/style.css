@@ -89,3 +89,64 @@
 .custom-radio input:checked + label::after {
   opacity: 1;
 }
+
+
+.custom-input {
+  position: relative;
+  padding-top: 16px;
+  /* background-color: pink; */
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.custom-input input {
+  border: 0;
+  /* background-color: aqua; */
+  padding: 5px 0;
+  font-size: 16px;
+}
+.custom-input input:focus {
+  outline: 0;
+}
+.custom-input label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  font-size: 16px;
+  pointer-events: none;
+  padding-top: 21px;
+  transition: all 0.3s ease;
+}
+
+.custom-input label::before {
+  content: '';
+  height: 1px;
+  left: 0;
+  right: 0;
+  position: absolute;
+  background-color: #333;
+  bottom: 0;
+}
+.custom-input label::after {
+  content: '';
+  height: 2px;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  position: absolute;
+  background-color: #1978ee;
+  transition: all 0.3s ease;
+}
+
+.custom-input input:focus + label,
+.custom-input input:valid + label {
+  padding-top: 6px;
+  font-size: 10px;
+}
+
+.custom-input input:focus + label::after,
+.custom-input input:valid + label::after {
+  left: 0;
+  right: 0;
+}
