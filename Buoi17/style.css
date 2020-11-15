@@ -10,6 +10,9 @@
   margin: 0 auto;
 }
 
+input:focus {
+  outline: 0;
+}
 
 .form-group {
   margin-bottom: 20px;
@@ -104,9 +107,7 @@
   padding: 5px 0;
   font-size: 16px;
 }
-.custom-input input:focus {
-  outline: 0;
-}
+
 .custom-input label {
   position: absolute;
   top: 0;
@@ -150,3 +151,37 @@
   left: 0;
   right: 0;
 }
+
+
+.input-password {
+  position: relative;
+  display: inline-block;
+  background-color: aqua;
+}
+.input-password input {
+  border: 1px solid #333;
+  padding: 6px 12px;
+  padding-right: 24px;
+}
+.input-password .icons {
+  position: absolute;
+  top: 0;
+  right: 0;
+  line-height: 31px;
+  bottom: 0;
+  width: 26px;
+  text-align: center;
+  cursor: pointer;
+}
+/* .input-password .icons.ion-eye-disabled {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.input-password input[type="password"] {
+
+}
+
+.input-password input[type="text"] ~ .icons.ion-eye-disabled {
+  opacity: 1;
+} */
