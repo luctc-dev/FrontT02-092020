@@ -336,3 +336,103 @@
 .box-11:hover::after {
   transform: scale(1, 1);
 }
+
+
+
+
+.btn {
+  margin-right: 100px;
+}
+.btn-1 {
+  position: relative;
+  border: 2px solid #333;
+  background-color: #fff;
+  padding: 15px 40px;
+  font-size: 20px;
+  z-index: 0;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+.btn-1::before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 0;
+  right: 0;
+  bottom: 100%;
+  z-index: -1;
+  transition: bottom 0.2s;
+  background-color: #333;
+}
+
+.btn-1:hover {
+  color: #fff;
+}
+.btn-1:hover::before {
+  bottom: 0;
+}
+/* .btn-1 span {
+  position: relative;
+  z-index: 2;
+} */
+
+.btn-2 {
+  position: relative;
+  border: 2px solid #333;
+  background-color: #fff;
+  padding: 15px 40px;
+  font-size: 20px;
+  z-index: 0;
+  cursor: pointer;
+  transition: color 0.3s;
+  overflow: hidden;
+}
+.btn-2::before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: transform 0.3s;
+  background-color: #333;
+  transform: translate(-100%);
+}
+
+.btn-2:hover {
+  color: #fff;
+}
+.btn-2:hover::before {
+  transform: translate(0);
+}
+
+
+
+.btn-3 {
+  color: #fff;
+  position: relative;
+  border: 2px solid #333;
+  background-color: #333;
+  padding: 15px 40px;
+  font-size: 20px;
+  z-index: 0;
+  cursor: pointer;
+  transition: color 0.3s;
+  overflow: hidden;
+}
+.btn-3::before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 0;
+  right: 0;
+  bottom: 0px;
+  pointer-events: none;
+  background-color: rgba(255,255,255, 0.2);
+  transition: transform 0.4s;
+  transform: translate(-75%, -60%) rotate(-45deg);
+}
+.btn-3:hover::before {
+  transform: translate(75%, 60%) rotate(-45deg);
+}
