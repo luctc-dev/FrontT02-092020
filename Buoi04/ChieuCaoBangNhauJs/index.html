@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .container {
+      max-width: 1170px;
+      margin: 0 auto;
+      padding: 100px 15px;
+    }
+    .row {
+      font-size: 0;
+      margin-left: -15px;
+      margin-right: -15px;
+    }
+    .row [class*="tcl-col-"] {
+      font-size: 16px;
+      display: inline-block;
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-bottom: 30px;
+      vertical-align: top;
+    }
+    .row .tcl-col-3 {
+      width: 25%;
+    }
+    .row .tcl-col-4 {
+      width: 33.3333%;
+    }
+    .row .tcl-col-6 {
+      width: 50%;
+    }
+    .row .tcl-col-2 {
+      /* Tạo giao diện có 6 column */
+      width: 16.666%;
+    }
+    .row .tcl-col-2_4 {
+      width: 20%;
+    }
+
+    .product {
+      background-color: yellow;
+    }
+
+    @media only screen and (max-width: 992px) {
+      .row .tcl-col-4 {
+        width: 50%;
+      }
+    } 
+    @media only screen and (max-width: 568px) {
+      .row .tcl-col-4 {
+        width: 100%;
+      }
+    } 
+  </style>
+</head>
+<body>
+    <div class="container">
+      <div class="row list-product">
+        <div class="tcl-col-4">
+          <div class="product">Lorem ipsum dolor sit amet consectetur, adi adipisicing elit. Ipsa id sapiente autem eaque. Consequatur expedita sequi provident aspernatur exercitationem at, nisi, dolorem dicta animi iure iste quasi possimus doloremque suscipit.</div>
+        </div>
+        <div class="tcl-col-4">
+          <div class="product">Lorem ipsum dolor sit amet conpsum dolor sit amet consectetur, adipispsum dolor sit amet consectetur, adipispsum dolor sit amet consectetur, adipispsum dolor sit amet consectetur, adipisicing elit. Ipsa id sapiente autem eaque. Consequatur expedita sequi provident aspernatur exercitationem at, nisi, dolorem dicta animi iure iste quasi possimus doloremque suscipit.</div>
+        </div>
+        <div class="tcl-col-4">
+          <div class="product">Lorem ipsum dolor sit amet consecpsum dolor sit amet consectetur, adipispsum dolor sit amet consectetur, adipistetur, adipisicing elit. Ipsa id sapiente autem eaque. Consequatur expedita sequi provident aspernatur exercitationem at, nisi, dolorem dicta animi iure iste quasi possimus doloremque suscipit.</div>
+        </div>
+        <div class="tcl-col-4">
+          <div class="product">Lorem ipsum dolor sit amet conspsum dolor sit amet consectetur, adipispsum dolor sit amet consectetur, adipisectetur, adipisicing elit. Ipsa id sapiente autem eaque. Consequatur expedita sequi provident aspernatur exercitationem at, nisi, dolorem dicta animi iure iste quasi possimus doloremque suscipit.</div>
+        </div>
+        <div class="tcl-col-4">
+          <div class="product">Lorem ipsum dolor sit amet copsum dolor sit amet consectetur, adipispsum dolor sit amet consectetur, adipispsum dolor sit amet consectetur, adipispsum dolor sit amet consectetur, adipisnsectetur, adipisicing elit. Ipsa id sapiente autem eaque. Consequatur expedita sequi provident aspernatur exercitationem at, nisi, dolorem dicta animi iure iste quasi possimus doloremque suscipit.</div>
+        </div>
+        <div class="tcl-col-4">
+          <div class="product">Lorem ipsum dolor sit amet consectetut consectetut consectetut consectetut consectetut consectetut consectetut consectetut consectetut consectetut consectetut consectetut consectetut consectetur, adipisicing elit. Ipsa id sapiente autem eaque. Consequatur expedita sequi provident aspernatur exercitationem at, nisi, dolorem dicta psum dolor sit amet consectetur, adipispsum dolor sit amet consectetur, adipispsum dolor sit amet consectetur, adipisanimi iure iste quasi possimus doloremque suscipit.</div>
+        </div>
+        <div class="tcl-col-4">
+          <div class="product">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa id sapiente autem eaque. Consequatur expedita sequi provident aspernatur exercitationem at, nisi, dolorem dictpsum dolor sit amet consectetur, adipispsum dolor sit amet consectetur, adipispsum dolor sit amet consectetur, adipisa animi iure iste quasi possimus doloremque suscipit.</div>
+        </div>
+        <div class="tcl-col-4">
+          <div class="product">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa id sapiente autem eaque. Consequatur expedita sequi provident aspernatur exercitationem at, nisi, dolorem dicta psum dolor sit amet consectetur, adipispsum dolor sit amet consectetur, adipispsum dolor sit amet consectetur, adipisanimi iure iste quasi possimus doloremque suscipit.</div>
+        </div>
+        <div class="tcl-col-4">
+          <div class="product">Lorem ipsum dolor sit amet psum dolor sit amet consectetur, adipispsum dolor sit amet consectetur, adipispsum dolor sit amet consectetur, adipisconsectetur, adipisicing elit. Ipsa id sapiente autem eaque. Consequatur expedita sequi provident aspernatur exercitationem at, nisi, dolorem dicta animi iure iste quasi possimus doloremque suscipit.</div>
+        </div>
+        <div class="tcl-col-4">
+          <div class="product">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa id sapiente autem eaque. Consequatur expedita sequi provident aspernatur exercitationem at, nisi, dolorem dictapsum dolor sit amet consectetur, adipispsum dolor sit amet consectetur, adipis animi iure iste quasi possimus doloremque suscipit.</div>
+        </div>
+        <div class="tcl-col-4">
+          <div class="product">Lorem ipsum dolor sit amet psum dolor sit amet consectetur, adipisconsectetur, adipisicing elit. Ipsa id sapiente autem eaque. Consequatur expedita sequi provident aspernatur exercitationem at, nisi, dolorem dicta animi iure iste quasi possimus doloremque suscipit.</div>
+        </div>
+      </div>
+    </div>
+</body>
+  <script src="main.js"></script>
+</html>
